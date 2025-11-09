@@ -1,0 +1,22 @@
+// 5️⃣ MainClass
+public class MainClass {
+    public static void main(String[] args) {
+        CustomPrintClass a = new CustomPrintClass();
+
+        // SumClass
+        double sum = SumClass.sumSeries();
+        a.pr("Sum of 1 + 0.9 + ... + 0.1 = " + sum);
+
+        // DivisorMultipleClass
+        int x = 12, y = 18;
+        a.pr("GCD of " + x + " & " + y + " = " + DivisorMultipleClass.gcd(x, y));
+        a.pr("LCM of " + x + " & " + y + " = " + DivisorMultipleClass.lcm(x, y));
+
+        // NumberConversionClass
+        int num = 25;
+        a.pr("Binary of 25 = " + NumberConversionClass.toBinary(num));
+        a.pr("Hex of 25 = " + NumberConversionClass.toHex(num));
+        a.pr("Octal of 25 = " + NumberConversionClass.toOctal(num));
+        a.pr("Binary 11001 to Decimal = " + NumberConversionClass.toDecimal("11001", 2));
+    }
+}
