@@ -1,0 +1,6 @@
+/ 4️⃣ CustomPrintClass
+class CustomPrintClass {
+    void pr(String message) {
+        System.out.println("[Output] " + message);
+    }
+}
