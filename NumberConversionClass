@@ -1,0 +1,18 @@
+/ 3️⃣ NumberConversionClass
+class NumberConversionClass {
+    static String toBinary(int n) {
+        return Integer.toBinaryString(n);
+    }
+
+    static String toHex(int n) {
+        return Integer.toHexString(n).toUpperCase();
+    }
+
+    static String toOctal(int n) {
+        return Integer.toOctalString(n);
+    }
+
+    static int toDecimal(String value, int base) {
+        return Integer.parseInt(value, base);
+    }
+}
